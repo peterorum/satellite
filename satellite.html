@@ -1,0 +1,25 @@
+<html>
+
+<body>
+
+<script>
+latMin = -33.76
+latMax = -17.23
+longMin = 112.91
+longMax = 153.11
+
+lat = latMin + Math.random() * (latMax - latMin)
+long = longMin + Math.random() * (longMax - longMin)
+
+loc = `${lat},${long}`
+
+url = `https://www.google.com/maps/@${loc},1000m/data=!3m1!1e3?hl=en`
+
+document.write(`<a href=${url} target='_blank'>${url}</a>`)
+
+</script>
+
+
+
+</body>
+</html>
